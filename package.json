@@ -1,23 +1,32 @@
 {
-  "name": "chatmessenger",
+  "name": "hft-asgmt-static-dynamic",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "start:debug": "node --inspect index.js",
+    "test": "jest"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AlexLouk/chatMessenger.git"
-  },
-  "author": "aljomosi",
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/AlexLouk/chatMessenger/issues"
+  "jest": {
+    "transform": {
+      "^.+\\.js?$": "babel-jest"
+    }
   },
-  "homepage": "https://github.com/AlexLouk/chatMessenger#readme",
   "dependencies": {
-    "ejs": "^3.1.3",
+    "ejs": "^3.0.2",
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-transform-regenerator": "^7.8.7",
+    "@babel/plugin-transform-runtime": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "@babel/runtime": "^7.9.2",
+    "babel-jest": "^25.3.0",
+    "jest": "^25.3.0",
+    "puppeteer": "^2.1.1"
   }
 }
