@@ -30,13 +30,10 @@
 }
 
 .chatContainer > .messages{
-
-
     height: 420px;
     border-bottom: 1px solid #dddd;
     overflow-y: scroll;
 }
-
 
 .chatContainer > .chatBottom form input#text{
     width: 260px;
@@ -44,5 +41,4 @@
 
 .chatContainer > .chatBottom form input.back{
     color: black;
-
 }
