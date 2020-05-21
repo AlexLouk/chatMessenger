@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8">
+        <meta content="IE=edge" http-equiv="X-UA-Compatible">
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+        <title>ChatMessenger</title>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="public/style2.css">
+    </head>
+    <body>
+        <div class="chatContainer">
+            <div class="chatHeader">
+                <h3>Welcome to the chat!</h3>
+            </div>
+            <div class="messages"></div>
+            <div class="chatBottom">
+                <form action="chat">
+                    <input type="hidden" id="name">
+                    <input type="text" name="text" id="text" placeholder="Type Text here">
+                    <input type="submit" name="submit" value="Send">
+                    <a href="index.html">
+                        <input type="button" name="back" value="Zurück" class="back">
+                    </a>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
