@@ -2,12 +2,17 @@
     box-sizing: border-box;
 }
 
+.Container{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 3%;
+}
+
 .chatContainer{
     width: 400px;
     height: 500px;
     border: 2px solid #ddd;
-    margin-left: 550px;
-    margin-top: 20px;
 }
 
 .chatContainer > .chatHeader{
@@ -25,6 +30,8 @@
 }
 
 .chatContainer > .messages{
+
+
     height: 420px;
     border-bottom: 1px solid #dddd;
     overflow-y: scroll;
@@ -37,4 +44,5 @@
 
 .chatContainer > .chatBottom form input.back{
     color: black;
+
 }
