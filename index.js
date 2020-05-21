@@ -7,7 +7,6 @@ const app = express();
 app.use('/public', express.static(path.join(__dirname, 'public')))
 app.set('view engine', 'ejs');
 
-
 app.get('/', (req, res) => {
   res.render('pages/index');
 });
@@ -22,7 +21,5 @@ app.get('/chat', (req, res) => {
 
 
 app.listen(port, () => {
-
   console.log(`Server is running on Port: ${port}`);
-
 });

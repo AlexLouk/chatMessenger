@@ -1,36 +1,31 @@
 <!DOCTYPE html>
 <html lang="de">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>ChatMessenger</title>
-    <%- include("../partials/head") %>
-</head>
-
-<body>
-    <div class="login">
-        <form action="form">
-            <h2 class="title">Welcome</h2>
-            <div class="user">
-                <h5>Username</h5>
-                <input type="text" class="input">
-            </div>
-            <div class="room">
-                <h5>Choose chatroom:</h5>
-                <label for="choose">Room1</label>
-                <input type="radio" class="choose" name="rooms">
-                <label for="choose2">Room2</label>
-                <input type="radio" class="choose2" name="rooms">
-            </div>
-            <a href="chat">
-            <input class="button" type="button" value="Login"/>
-        </a>
-        </form>
-    </div>
-    </div>
-</body>
-
-
-
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Chat Messenger</title>
+        <%- include("../partials/head") %>
+    </head>
+    <body>
+        <div class="login">
+            <form action="form">
+                <h2 class="title">Welcome</h2>
+                <div class="user">
+                    <h5>Username</h5>
+                    <input type="text" class="input">
+                </div>
+                <div class="room">
+                    <h5>Choose chatroom:</h5>
+                    <label for="choose">Room1</label>
+                    <input type="radio" class="choose" name="rooms">
+                    <label for="choose2">Room2</label>
+                    <input type="radio" class="choose2" name="rooms">
+                </div>
+                <a href="chat">
+                <input class="button" type="button" value="Login"/>
+            </a>
+            </form>
+        </div>
+        </div>
+    </body>
 </html>
