@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="de">
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
-        <title>Chat Messenger</title>
         <%- include("../partials/head") %>
     </head>
     <body>
@@ -13,12 +10,12 @@
                 <div class="chatHeader">
                     <h3>Welcome to the chat!</h3>
                 </div>
-                <div class="messages"></div>
+                <div class="messages" id="send"></div>
                 <div class="chatBottom">
-                    <form action="chat">
+                    <form action="chat" id="chat">
                         <input type="hidden" id="name">
                         <input type="text" name="text" id="text" placeholder=" Type your Message here">
-                        <input type="submit" name="submit" value="Send">
+                        <input type="submit" name="submit" value="Send" id="send">
                         <a href="index">
                             <input type="button" name="back" value="Back" class="back">
                         </a>

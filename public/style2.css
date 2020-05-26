@@ -33,6 +33,7 @@
 }
 
 .chatContainer > .messages{
+    text-align: left;
     margin-right: 1px;
     height: 415px;
     border-bottom: 1px solid gray;
