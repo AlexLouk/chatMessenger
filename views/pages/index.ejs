@@ -1,28 +1,25 @@
 <!DOCTYPE html>
 <html lang="de">
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
-        <title>Chat Messenger</title>
         <%- include("../partials/head") %>
     </head>
-    <body>
+    </body>
         <div class="login">
-            <form action="form">
+            <form action="form" id="formmessage">
                 <h2 class="title">Welcome</h2>
                 <div class="user">
                     <h5>Username:</h5>
-                    <input type="text" class="input" placeholder=" Type your username here">
+                    <input type="text" id="text" class="input" placeholder=" Type your username here">
                 </div>
                 <div class="room">
                     <h5>Choose chat room:</h5>
                     <label for="choose">Room 1</label>
-                    <input type="radio" class="choose" name="rooms">
+                    <input type="radio" class="choose" name="rooms" id="room1">
                     <label for="choose2">Room 2</label>
-                    <input type="radio" class="choose2" name="rooms">
+                    <input type="radio" class="choose2" name="rooms" id="room2">
                 </div>
                 <a href="chat">
-                <input class="button" type="button" value="Login"/>
+                <input class="button" id="submit" type="button" value="Login"/>
             </a>
             </form>
         </div>
