@@ -1,12 +1,16 @@
 const express = require("express");
 const path = require("path");
+const sqlite3 = require("sqlite3").verbose();
 
+
+const db = new sqlite3.Database("./db/chatMessenger.db"); 
 const port = process.env.PORT || 3000;
 const app = express();
 
 app.use('/public', express.static(path.join(__dirname, 'public')))
 app.set('view engine', 'ejs');
 
+//Routen
 app.get('/', (req, res) => {
   res.render('pages/index');
 });
