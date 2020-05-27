@@ -1,10 +1,12 @@
 $(document).ready(() => {
   console.log("Test")
   const socket = io();
+  const textBox = document.getElementById("text");
   $('#chat').submit((event) => {
     event.preventDefault();
 
-    socket.emit('message', $('#text').val());
+    socket.emit('message', textBox.val());
+    textBox.value = "";
     return false;
   });
 

@@ -5,18 +5,18 @@
     </head>
     </body>
         <div class="login">
-            <form action="form" id="formmessage">
+            <form action="login" id="formmessage" method="post">
                 <h2 class="title">Welcome</h2>
                 <div class="user">
                     <h5>Username:</h5>
-                    <input type="text" id="text" class="input" placeholder=" Type your username here">
+                    <input type="text" id="username" class="input" placeholder="Type your username here">
                 </div>
                 <div class="room">
                     <h5>Choose chat room:</h5>
-                    <label for="choose">Room 1</label>
-                    <input type="radio" class="choose" name="rooms" id="room1">
-                    <label for="choose2">Room 2</label>
-                    <input type="radio" class="choose2" name="rooms" id="room2">
+                    <label for="room1">Room 1</label>
+                    <input type="radio" class="choose" name="rooms" id="room1" value="room1">
+                    <label for="room2">Room 2</label>
+                    <input type="radio" class="choose2" name="rooms" id="room2" value="room2">
                 </div>
                 <a href="chat">
                 <input class="button" id="submit" type="button" value="Login"/>
