@@ -1,6 +1,7 @@
 $(document).ready(() => {
   console.log("Test")
   const socket = io();
+  var name = $('#user');
   $('#chat').submit((event) => {
     event.preventDefault();
 
@@ -9,7 +10,7 @@ $(document).ready(() => {
   });
 
   socket.on('message', function(msg){
-   // $('#send').append($('<li>').text(msg));
-    $('#send').append($('<p>').text(msg));
+    var today = new Date().toLocaleTimeString('en-US', { hour12: false, hour: "numeric", minute: "numeric"});
+    $('#send').append(today + name).append($('<p>').text(msg));
   });
 });
